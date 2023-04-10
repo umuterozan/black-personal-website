@@ -9,6 +9,7 @@ export default function Header() {
                     <ActiveLink activeClassName="active" href="/about">About</ActiveLink>
                     <ActiveLink activeClassName="active" href="/contact">Contact</ActiveLink>
                     <ActiveLink activeClassName="active" href="/portfolios">Portfolios</ActiveLink>
+                    <ActiveLink activeClassName="active" href="/journey">Journey</ActiveLink>
                     <ActiveLink activeClassName="active" href="/blog">Blog</ActiveLink>
                 </nav>
             </div>
