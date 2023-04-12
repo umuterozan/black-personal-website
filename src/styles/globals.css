@@ -10,6 +10,6 @@
 
 @layer components {
     .active {
-        @apply before:block before:w-[5px] before:h-[5px] before:bg-[#FDB827] before:rounded-full flex items-center gap-x-[3px]
+        @apply before:hidden computer:before:block before:w-[5px] before:h-[5px] before:bg-[#FDB827] before:rounded-full flex items-center gap-x-[3px]
     }
 }
