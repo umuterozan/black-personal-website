@@ -43,20 +43,24 @@ const portfolios = [
 export default function PortfoliosSection() {
     return (
         <section>
-            <div className="container py-[62px] px-[101px]">
-                <div className="grid grid-cols-2 gap-6">
+            <div className="container py-[62px] px-[33px] computer:px-[101px]">
+                <div className="computer:hidden text-center mb-[52px] text-white font-black text-[32px] leading-[39px]">
+                    What i’ve done😋
+                </div>
+                <div className="grid grid-cols-1 computer:grid-cols-2 gap-[19px] computer:gap-6">
                     {portfolios.map((portfolio) => (
                         <div
                             key={portfolio.id}
-                            className="flex items-center gap-x-3 pr-[32px] bg-white/10 border border-white/[.35] rounded-[19px]"
+                            className="flex flex-col computer:flex-row items-center gap-x-3 computer:pr-[32px] bg-white/10 border border-white/[.35] rounded-[19px]"
                         >
                             <Image
+                                className="w-full computer:w-auto"
                                 src={`/Portfolio-${portfolio.id}.svg`}
                                 alt={`Portolio-${portfolio.id}`}
                                 width={181}
                                 height={181}
                             />
-                            <div className="text-white">
+                            <div className="text-white p-5 computer:p-0">
                                 <h3 className="font-bold text-sm">
                                     {portfolio.title}
                                 </h3>

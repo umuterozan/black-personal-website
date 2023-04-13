@@ -31,27 +31,28 @@ const timeLineEvents = [
 export default function JourneySection() {
     return (
         <section>
-            <div className="container flex gap-x-20 pb-[30px]">
-                <div className="grid gap-y-8 mt-[30px]">
+            <div className="container flex flex-col-reverse computer:flex-row gap-x-20 pb-[30px]">
+                <div className="grid gap-y-[15px] computer:gap-y-8 mt-[22px] computer:mt-[30px] px-5 computer:px-0">
                     <div className="flex items-center gap-x-[15px]">
                         <Image
+                            className="hidden computer:block"
                             src="/Saly-22.svg"
                             alt="Saly-22"
                             width={221}
                             height={221}
                         />
-                        <div className="grid gap-y-8">
-                            <h1 className="font-bold text-5xl leading-[58px] text-white max-w-[573px]">
+                        <div className="grid gap-y-[15px] computer:gap-y-8">
+                            <h1 className="font-bold text-[36px] leading-[44px] computer:text-5xl computer:leading-[58px] text-white max-w-[573px] text-center computer:text-left">
                                 The resolution, What am I gonna do?
                             </h1>
-                            <p className="font-medium text-sm leading-[17px] text-white/[.45] max-w-[344px]">
+                            <p className="font-medium text-sm leading-[17px] text-white/[.45] max-w-[344px] text-center computer:text-left">
                                 Lorem Ipsum is simply dummy text of the printing
                                 and typesetting industry. Lorem Ipsum has been
                                 the industry's standard
                             </p>
                         </div>
                     </div>
-                    <div className="text-white grid gap-y-6 max-w-[789px]">
+                    <div className="text-white grid gap-y-[15px] computer:gap-y-6 max-w-[789px]">
                         <h3 className="font-bold text-sm leading-[17px]">
                             The standard Lorem Ipsum passage, used since the
                             1500s
@@ -106,20 +107,20 @@ export default function JourneySection() {
                         </p>
                     </div>
                 </div>
-                <div className="bg-[#0E0E10] max-w-[227px] pl-[17px] pr-[19px] overflow-y-auto">
-                    <h2 className="font-black text-[25px] text-white mt-10 mb-[22px]">
+                <div className="bg-[#0E0E10] computer:max-w-[227px] pl-[27px] computer:pl-[17px] computer:pr-[19px] pb-6 computer:pb-0 overflow-auto">
+                    <h2 className="font-black text-[25px] text-white mt-[22px] computer:mt-10 mb-[15px] computer:mb-[22px]">
                         Time line
                     </h2>
-                    <div className="grid gap-y-4">
-                        <select className="bg-transparent text-white outline-none border border-white/[.35] rounded-[9px] p-[13px] w-full">
+                    <div className="flex computer:grid gap-x-[18px] gap-y-4">
+                        <select className="hidden computer:inline bg-transparent text-white outline-none border border-white/[.35] rounded-[9px] p-[13px] w-full">
                             <option selected>2021</option>
                         </select>
                         {timeLineEvents.map((event) => (
                             <div key={event.id} className="grid gap-y-2">
-                                <small className="text-[11px] text-white/[.57]">
+                                <small className="hidden computer:inline text-[11px] text-white/[.57]">
                                     {event.date}
                                 </small>
-                                <div className="bg-[#fdb827]/[.05] border border-white/[.35] rounded-[9px] p-[13px] flex flex-col justify-between min-h-[88px]">
+                                <div className="bg-[#fdb827]/[.05] border border-white/[.35] rounded-[9px] p-[13px] flex flex-col justify-between w-[191px] computer:w-auto min-h-[88px]">
                                     <h3 className="font-bold text-xs leading-[15px] text-white">
                                         {event.title}
                                     </h3>

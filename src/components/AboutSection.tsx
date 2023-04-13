@@ -4,7 +4,7 @@ export default function AboutSection() {
     return (
         <section>
             <div className="container">
-                <div className="flex gap-x-[6px] pl-[46px] pr-[226px]">
+                <div className="flex flex-col computer:flex-row gap-x-[6px] gap-y-6 computer:gap-y-0 pl-[46px] pr-[45px] computer:pl-[46px] computer:pr-[226px]">
                     <Image
                         className="pointer-events-none"
                         src="/Saly-10.svg"
@@ -12,7 +12,7 @@ export default function AboutSection() {
                         width={323}
                         height={323}
                     />
-                    <h1 className="mt-[82px] font-bold text-[45px] leading-[54px] text-white">
+                    <h1 className="computer:mt-[82px] text-center computer:text-left font-bold text-[32px] leading-[39px] computer:text-[45px] computer:leading-[54px] text-white">
                         I’m Amirhossein Meydani A{" "}
                         <span className="text-[#FDB827]">Backend</span> and{" "}
                         <span className="text-[#FDB827]">Android</span>{" "}
@@ -20,7 +20,7 @@ export default function AboutSection() {
                         <span className="text-[#FDB827]">UI/UX</span> Designer
                     </h1>
                 </div>
-                <div className="text-white text-xs leading-[14px] grid gap-y-4 my-5 pl-[59px] pr-[51px]">
+                <div className="text-white text-xs leading-[15px] grid gap-y-4 my-5 pl-7 pr-[29px] computer:pl-[59px] computer:pr-[51px]">
                     <h3 className="font-bold">
                         The standard Lorem Ipsum passage, used since the 1500s
                     </h3>
