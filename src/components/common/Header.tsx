@@ -1,5 +1,5 @@
 import { usePathname } from "next/navigation";
-import { MenuIcon, CloseIcon } from "./icons";
+import { MenuIcon, CloseIcon } from "../icons";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -57,8 +57,9 @@ export default function Header() {
                         >
                             {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
                         </button>
-                        {routes.map((route) => (
+                        {routes.map((route, key) => (
                             <Link
+                                key={key}
                                 className={
                                     route.isActive
                                         ? "active"
@@ -78,8 +79,9 @@ export default function Header() {
                     <nav className="font-bold text-sm text-white bg-white/[.13] divide-y-2 divide-white/[.15]">
                         {routes
                             .filter((route) => !route.isActive)
-                            .map((route) => (
+                            .map((route, key) => (
                                 <Link
+                                    key={key}
                                     className="block py-[14px] pl-[27px] transition-all hover:bg-white/[.15]"
                                     href={route.path}
                                 >

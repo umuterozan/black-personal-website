@@ -1,4 +1,4 @@
-import { GithubIcon, TwitterIcon, DribbleIcon } from "./icons";
+import { GithubIcon, TwitterIcon, DribbleIcon } from "../icons";
 
 export default function Footer() {
     return (

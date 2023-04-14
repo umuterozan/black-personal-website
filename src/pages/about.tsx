@@ -1,13 +1,14 @@
 import AboutSection from "@/components/AboutSection";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Layout from "@/components/Layout";
+import Footer from "@/components/common/Footer";
+import Header from "@/components/common/Header";
 
 export default function About() {
     return (
-        <>
+        <Layout title="About">
             <Header />
             <AboutSection />
             <Footer />
-        </>
-    )
+        </Layout>
+    );
 }

@@ -1,13 +1,14 @@
 import ContactSection from "@/components/ContactSection";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Layout from "@/components/Layout";
+import Footer from "@/components/common/Footer";
+import Header from "@/components/common/Header";
 
 export default function Contact() {
     return (
-        <>
+        <Layout title="Contact">
             <Header />
             <ContactSection />
             <Footer />
-        </>
-    )
+        </Layout>
+    );
 }
